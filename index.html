@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mobile-First</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Zilla+Slab&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <ul class="social">
+        <h1>Landscape</h1>
+        <a href="#" class="twittersvg">
+            <object data="twitter.svg" type="image/svg+xml">
+            </object>
+        </a>
+        <a href="#" class="youtubesvg">
+            <object data="youtube.svg" type="image/svg+xml">
+            </object>
+        </a>
+        <a href="#" class="instagramsvg">
+            <object data="instagram.svg" type="image/svg+xml">
+            </object>
+        </a>
+        <a href="#" class="linkedinsvg">
+            <object data="linkedin.svg" type="image/svg+xml">
+            </object>
+        </a>
+        <a href="#" class="facebooksvg">
+            <object data="facebook.svg" type="image/svg+xml">
+            </object>
+        </a>
+    </ul>
+    <div id="nav">
+
+        <ul>
+            <li>
+                <a href="#photos">Photos</a>
+            </li>
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#personal">About</a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="main">
+        <section id="welcome" class="grid">
+            <div class="welcome-txt">
+                <h2>
+                    My Remote <br /> Photography
+                </h2>
+                <p class="leading"> Lorem quisquam possimus earum reiciendis incidunt <br> alias,
+                    ipsam minus ratione voluptas aliquam similique? </p>
+
+            </div>
+            <div class="welcome-img">
+                <img src="stock profile.png" alt="picture of myself">
+                <button href="#portfolio" class="button">View my Work</button>
+            </div>
+        </section>
+        <section id="photos">
+            <h3>Some of my Photos</h3>
+            <div class="projects_grid">
+                <div class="post1">
+                    <a href="#atlantis">
+                        Atlantis
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ab magni neque qui eligendi.
+
+                    </p>
+                </div>
+                <div class="img1">
+                    <img src="DSC_9349_o.jpg" alt="a picture i took in atlantis">
+                </div>
+                <div class="img2">
+                    <img src="DSC_3644.jpeg" alt="a picture i took descripting erosion">
+
+                </div>
+                <div class="post2" style="text-align:right">
+                    <a href="#erosion">Erosion</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore deserunt qui at impedit.
+                    </p>
+
+                </div>
+                <div class="post3">
+                    <a href="#bahamas">Bahamas</a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet doloribus aperiam doloremque.
+                    </p>
+                </div>
+                <div class="img3">
+                    <img src="DSC_0817.jpg" alt="a picture descripting the several islands">
+                </div>
+            </div>
+
+
+        </section>
+        <section id="personal">
+            <h1>
+                Hi I'm Jen Nokowtzki
+            </h1>
+            <img src="undraw_statistic_chart_38b6.svg" alt="a picture of me using statistics">
+            <img src="undraw_group_video_el8e.svg" alt="a picture of groupchat">
+            <img src="undraw_landscape_mode_53ej.svg" alt="landscape phone mode">
+            <ul>
+                <li>
+                    <h2>My Mission</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, dolore.</p>
+                </li>
+                <li>
+                    <h2>My Philosophy</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, fugit?</p>
+                </li>
+                <li>
+                    <h2>Hobbys</h2>
+                    <ul class="hobbylist">
+                        <li id="hobby1">Hobby1</li>
+                        <li id="hobby2">Hobby2</li>
+                        <li id="hobby3">Hobby3</li>
+                        <li id="hobby4">Hobby4</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </section>
+        <section id="contact">
+            <h3>Contact me!</h3>
+            <form>
+                <input type"text" placeholder="Name">
+                <input type"text" placeholder="Email">
+                <textarea name="" id="" cols="47" rows="3" placeholder="Your Message"></textarea>
+                <button class="button">Send Message</button>
+
+            </form>
+        </section>
+        <footer>
+            <div class="grid">
+                <p class="copyright">Copyright 2020 Mobile-First</p>
+
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var nav = document.getElementById("nav");
+        var sticky = nav.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                nav.classList.add("sticky")
+            } else {
+                nav.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
